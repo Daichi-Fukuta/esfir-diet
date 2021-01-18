@@ -1,0 +1,29 @@
+.contact {
+    &__inner {
+        // なぜか inner-initというmixinがないというエラーになる
+        // 変数もないよってエラーになる
+        // @include inner-init;
+        max-width: 1200px;
+        margin: 100px auto 0;
+    }
+    &__title {
+        margin-top: 50px;
+        padding: 30px 0;
+        text-align: center;
+        border-top: 0.5px solid rgb(230, 230, 230);
+        border-bottom: 0.5px solid rgb(230, 230, 230);
+    }
+    &__content {
+        margin-top: 50px;
+    }
+    &__salon:nth-child(n + 2) {
+        margin-top: 70px;
+    }
+    &__salon-name {
+        font-size: 2rem;
+    }
+    &__map {
+        width: 1200px;
+        height: 300px;
+    }
+}

@@ -1,0 +1,11 @@
+.blog {
+    &__inner {
+        @include inner-init;
+        // 消す
+        height: 500px
+        // 消す
+    }
+    &__title {
+        @include section-title-init;
+    }
+}

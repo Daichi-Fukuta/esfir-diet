@@ -1,0 +1,50 @@
+.footer {
+    &__inner {
+        width: 100vw;
+        height: 550px;
+        background-color: rgb(230, 230, 230);
+        margin-top: 100px;
+    }
+    &__cat {
+        @include flex-box-init;
+        justify-content: start;
+        width: 60%;
+        margin: 0 auto;
+    }
+    &__info {
+        margin-top: 70px;
+    }
+    &__logo {
+        font-size: 3rem;
+        color: rgb(100, 100, 100);
+    }
+    &__address {
+        margin-top: 20px;
+    }
+    &__address-item {
+        font-size: 1.5rem;
+        color: rgb(100, 100, 100);
+    }
+    &__chat {
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    &__line {
+        content: url(../../images/footer-line.png);
+    }
+    &__whatsapp {
+        content: url(../../images/footer-whatsapp.png);
+    }
+    &__nav {
+        margin-top: 70px;
+        margin-left: 250px;
+    }
+    &__nav-item {
+        margin-bottom: 10px;
+        a {
+            font-size: 1.3rem;
+            color: rgb(100, 100, 100);
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.desc {
+    &__inner {
+        @include inner-init;
+    }
+    &__title {
+        @include section-title-init;
+    }
+    &__contents {
+        @include flex-box-init;
+        margin-bottom: 70px;
+        &:nth-child(3) {
+            flex-direction: row-reverse;
+        }
+    }
+    &__text-wrap {
+        width: calc(50% - 20px);
+        position: relative;
+    }
+    &__text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &__img {
+        width: calc(50% - 20px);
+    }
+}

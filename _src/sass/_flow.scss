@@ -1,0 +1,58 @@
+.flow {
+    &__inner {
+        @include inner-init;
+    }
+    &__title {
+        margin-top: 50px;
+        padding: 30px 0;
+        text-align: center;
+        border-top: 0.5px solid rgb(230, 230, 230);
+        border-bottom: 0.5px solid rgb(230, 230, 230);
+    }
+    &__content {
+        margin-top: 50px;
+    }
+    &__step {
+        margin-bottom: 50px;
+    }
+    .step {
+        color: rgb(247, 187, 131);
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+}
+// .flow {
+//     &__inner {
+//         @include inner-init;
+//     }
+//     &__title {
+//         @include section-title-init;
+//     }
+//     &__contents {
+//         @include flex-box-init;
+//         &-item {
+//             width: 350px;
+//             height: 300px;
+//             position: relative;
+//             .flow__img {
+//                 width: 100%;
+//                 height: 100%;
+//                 &-1 {
+//                     content: url(../../images/main-img.jpg);
+//                 }
+//                 &-2 {
+//                     content: url(../../images/main-img.jpg);
+//                 }
+//                 &-3 {
+//                     content: url(../../images/main-img.jpg);
+//                 }
+//             }
+//             .flow__num {
+//                 position: absolute;
+//                 top: -70px;
+//                 left: 10px;
+//                 font-size: 5rem;
+//             }
+//         }
+//     }
+// }

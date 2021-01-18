@@ -1,0 +1,31 @@
+.contact__inner {
+  max-width: 1200px;
+  margin: 100px auto 0;
+}
+
+.contact__title {
+  margin-top: 50px;
+  padding: 30px 0;
+  border-top: 0.5px solid #e6e6e6;
+  border-bottom: 0.5px solid #e6e6e6;
+  text-align: center;
+}
+
+.contact__content {
+  margin-top: 50px;
+}
+
+.contact__salon:nth-child(n + 2) {
+  margin-top: 70px;
+}
+
+.contact__salon-name {
+  font-size: 2rem;
+}
+
+.contact__map {
+  width: 1200px;
+  height: 300px;
+}
+
+/*# sourceMappingURL=contact.css.map */

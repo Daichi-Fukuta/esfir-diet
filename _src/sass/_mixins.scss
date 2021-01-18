@@ -1,0 +1,15 @@
+@mixin inner-init {
+    max-width: $max-width;
+    margin: 100px auto 0;
+}
+
+@mixin section-title-init {
+    font-size: $section-title-size;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@mixin flex-box-init {
+    display: flex;
+    justify-content: space-between;
+}

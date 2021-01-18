@@ -1,0 +1,20 @@
+.reserve {
+    &__inner {
+        @include inner-init;
+    }
+    &__title {
+        @include section-title-init;
+    }
+    &__list {
+        @include flex-box-init;
+        justify-content: space-around;
+    }
+    &__item {
+        &:nth-child(1) a {
+            content: url(../../images/line.png);
+        }
+        &:nth-child(2) a {
+            content: url(../../images/whatsapp.png);
+        }
+    }
+}
