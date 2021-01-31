@@ -19,11 +19,28 @@
     &__salon:nth-child(n + 2) {
         margin-top: 70px;
     }
-    &__salon-name {
-        font-size: 2rem;
+    // &__salon-name {
+        // font-size: 2rem;
+    // }
+    &__salon-tr {
+        border-bottom: 1px solid rgb(230, 230, 230);
+    }
+    &__salon-th {
+        text-align: left;
+        padding: 5px;
+    }
+    &__salon-td {
+        margin-left: 100px;
     }
     &__map {
+        margin-top: 10px;
         width: 1200px;
         height: 300px;
+    }
+    @media screen and (max-width: 768px) {
+        &__map {
+            width: 100vw;
+            height: 300px;
+        }
     }
 }

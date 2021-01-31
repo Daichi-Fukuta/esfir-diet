@@ -44,7 +44,46 @@
         margin-bottom: 10px;
         a {
             font-size: 1.3rem;
-            color: rgb(100, 100, 100);
+        }
+    }
+    a {
+        color: rgb(100, 100, 100);
+    }
+    @media screen and (max-width: 768px) {
+        &__inner {
+            height: 350px;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        &__cat {
+            display: block;
+            width: 100%;
+        }
+        &__info {
+            margin-top: 0;
+        }
+        &__logo {
+            font-size: 1.5rem;
+        }
+        &__address {
+            margin-top: 10px;
+        }
+        &__address-item {
+            font-size: 1rem;
+            margin-bottom: 1px;
+        }
+        &__chat {
+            display: none;
+        }
+        &__nav {
+            margin-top: 10px;
+            margin-left: 0;
+        }
+        &__nav-item {
+            margin-bottom: 1px;
+            a {
+                font-size: 0.8rem;
+            }
         }
     }
 }

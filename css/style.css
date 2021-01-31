@@ -45,7 +45,7 @@ a {
 }
 
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: -300px;
   width: 300px;
@@ -128,6 +128,16 @@ a {
   opacity: 0.6;
 }
 
+.main-v__title {
+  -webkit-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 6.5rem;
+}
+
 .main-v__text {
   -webkit-transform: translate(-50%, -50%);
   position: absolute;
@@ -136,16 +146,6 @@ a {
           transform: translate(-50%, -50%);
   color: #fff;
   font-size: 3rem;
-}
-
-.title {
-  -webkit-transform: translate(-50%, -50%);
-  position: absolute;
-  top: 40%;
-  left: 50%;
-          transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 6.5rem;
 }
 
 .concept__inner {
@@ -210,11 +210,11 @@ a {
 }
 
 .ba__before-2 {
-  content: url("/images/4595.jpg");
+  content: url("/images/before1.jpg");
 }
 
 .ba__after-2 {
-  content: url("/images/footer-line.png");
+  content: url("/images/after1.jpg");
 }
 
 .desc__inner {
@@ -339,13 +339,23 @@ a {
   margin-top: 70px;
 }
 
-.contact__salon-name {
-  font-size: 2rem;
+.contact__salon-tr {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.contact__salon-th {
+  padding: 5px;
+  text-align: left;
+}
+
+.contact__salon-td {
+  margin-left: 100px;
 }
 
 .contact__map {
   width: 1200px;
   height: 300px;
+  margin-top: 10px;
 }
 
 .blog__inner {
@@ -423,8 +433,83 @@ a {
 }
 
 .footer__nav-item a {
-  color: #646464;
   font-size: 1.3rem;
+}
+
+.footer a {
+  color: #646464;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__btn {
+    top: 5px;
+    color: #7d7d7d;
+    font-size: 45px;
+  }
+  .nav__btn-text {
+    top: 37px;
+    font-size: 1.2rem;
+  }
+  .main-v__img {
+    background-image: url("../../images/main-img.jpeg");
+  }
+  .main-v__title {
+    font-size: 2rem;
+  }
+  .main-v__text {
+    font-size: 1rem;
+  }
+  .concept__inner {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .ba__inner {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .ba__img {
+    width: 150px;
+    height: 225px;
+  }
+  .contact__map {
+    width: 100vw;
+    height: 300px;
+  }
+  .footer__inner {
+    height: 350px;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .footer__cat {
+    display: block;
+    width: 100%;
+  }
+  .footer__info {
+    margin-top: 0;
+  }
+  .footer__logo {
+    font-size: 1.5rem;
+  }
+  .footer__address {
+    margin-top: 10px;
+  }
+  .footer__address-item {
+    margin-bottom: 1px;
+    font-size: 1rem;
+  }
+  .footer__chat {
+    display: none;
+  }
+  .footer__nav {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .footer__nav-item {
+    margin-bottom: 1px;
+  }
+  .footer__nav-item a {
+    font-size: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 .nav {
-    position: absolute;
+    // position: absolute;
+    position: fixed;
     top: 0;
     left: -300px;
     width: 300px;
@@ -43,6 +44,18 @@
             top: 50px;
             left: -2.5px;
             font-size: 1.5rem;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__btn {
+            color: rgb(125, 125, 125);
+            top: 5px;
+            font-size: 45px;
+            &-text {
+                font-size: 1.2rem;
+                top: 37px;
+            }
         }
     }
 }
