@@ -1,20 +1,24 @@
 .reserve {
     &__inner {
-        @include inner-init;
+        margin-top: 20px;
     }
-    &__title {
-        @include section-title-init;
+    &__text {
+        font-size: 1.2rem;
+        color: rgb(210, 210, 210);
     }
-    &__list {
-        @include flex-box-init;
-        justify-content: space-around;
+    &__btn {
+        margin-top: 5px;
     }
-    &__item {
-        &:nth-child(1) a {
-            content: url(../../images/line.png);
+    &__line {
+        a {
+            content: url(../../images/line-64px.png);
+            border-radius: 13px;
         }
-        &:nth-child(2) a {
-            content: url(../../images/whatsapp.png);
+    }
+    &__whatsapp {
+        a {
+            content: url(../../images/whatsapp-64px.png);
+            margin-left: 15px;
         }
     }
 }
