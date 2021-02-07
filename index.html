@@ -18,7 +18,7 @@
 <!-- ナビゲーション -->
 <nav class="nav">
     <div class="nav__inner">
-        <ul class="nav__list">
+        <ul class="nav__list lang-change" lang="ja">
             <li class="nav__item"><a href="./index.html">トップ</a></li>
             <li class="nav__item"><a href="./concept.html">コンセプト</a></li>
             <li class="nav__item"><a href="./ba.html">ビフォーアフター</a></li>
@@ -26,15 +26,62 @@
             <li class="nav__item"><a href="./contact.html">コンタクト</a></li>
             <li class="nav__item"><a href="./blog.html">ブログ</a></li>
         </ul>
+        <ul class="nav__list lang-change" lang="en">
+            <li class="nav__item"><a href="./index.html">Top</a></li>
+            <li class="nav__item"><a href="./concept.html">Concept</a></li>
+            <li class="nav__item"><a href="./ba.html">Before After</a></li>
+            <li class="nav__item"><a href="./flow.html">Flow</a></li>
+            <li class="nav__item"><a href="./contact.html">Contact</a></li>
+            <li class="nav__item"><a href="./blog.html">Blog</a></li>
+        </ul>
+        <ul class="nav__list lang-change" lang="ru">
+            <li class="nav__item"><a href="./index.html">верхний</a></li>
+            <li class="nav__item"><a href="./concept.html">Концепция</a></li>
+            <li class="nav__item"><a href="./ba.html">До после</a></li>
+            <li class="nav__item"><a href="./flow.html">поток</a></li>
+            <li class="nav__item"><a href="./contact.html">Связаться с нами</a></li>
+            <li class="nav__item"><a href="./blog.html">Блог</a></li>
+        </ul>
         <div class="reserve">
             <div class="reserve__inner">
-                <div class="reserve__text">予約はこちらから</div>
+                <div class="reserve__text lang-change" lang="ja">予約はこちらから</div>
+                <div class="reserve__text lang-change" lang="en">Reservation here</div>
+                <div class="reserve__text lang-change" lang="ru">Нажмите здесь, чтобы сделать заказ</div>
                 <div class="reserve__btn">
                     <span class="reserve__line"><a href=""></a></span>
                     <span class="reserve__whatsapp"><a href=""></a></span>
                 </div>
             </div>
         </div>
+        <!-- 言語切替ラジオボタン開始-->
+        <div class="nav__lang">
+            <div class="nav__lang-text lang-change" lang="ja">言語切り替え</div>
+            <div class="nav__lang-text lang-change" lang="en">Language switching</div>
+            <div class="nav__lang-text lang-change" lang="ru">Переключение языка</div>
+            <div class="nav__lang-btn">
+                <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')" checked>
+                <label for="sJa">
+                    <span class="lang-change" lang="ja">日本語</span>
+                    <span class="lang-change" lang="en">Japanese</span>
+                    <span class="lang-change" lang="ru">Японский</span>
+                </label>
+                
+                <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')">
+                <label for="sEn">
+                    <span class="lang-change" lang="ja">英語</span>
+                    <span class="lang-change" lang="en">English</span>
+                    <span class="lang-change" lang="ru">английский</span>
+                </label>
+        
+                <input type="radio" name="langKbn" id="sRu" onClick="langSet('ru')">
+                <label for="sRu">
+                    <span class="lang-change" lang="ja">ロシア語</span>
+                    <span class="lang-change" lang="en">Russian</span>
+                    <span class="lang-change" lang="ru">русский</span>
+                </label>
+            </div>
+        </div>
+        <!-- 言語切替ラジオボタン終了 -->
         <span class="nav__btn">
             <ion-icon name="menu-outline" class="nav__btn-open"></ion-icon>
             <ion-icon name="close-outline" class="nav__btn-close"></ion-icon>
@@ -43,12 +90,39 @@
     </div>
 </nav>
 
+
 <!-- メインヴィジュアル -->
 <section class="main-v">
     <div class="main-v__inner">
+        <!-- 言語切替ラジオボタン開始-->
+        <div class="main-v__lang">
+            <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')" checked>
+            <label for="sJa">
+                <span class="lang-change" lang="ja">日本語</span>
+                <span class="lang-change" lang="en">Japanese</span>
+                <span class="lang-change" lang="ru">Японский</span>
+            </label>
+        
+            <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')">
+            <label for="sEn">
+                <span class="lang-change" lang="ja">英語</span>
+                <span class="lang-change" lang="en">English</span>
+                <span class="lang-change" lang="ru">английский</span>
+            </label>
+        
+            <input type="radio" name="langKbn" id="sRu" onClick="langSet('ru')">
+            <label for="sRu">
+                <span class="lang-change" lang="ja">ロシア語</span>
+                <span class="lang-change" lang="en">Russian</span>
+                <span class="lang-change" lang="ru">русский</span>
+            </label>
+        </div>
+        <!-- 言語切替ラジオボタン終了 -->
         <div class="main-v__img"></div>
         <h1 class="main-v__title">estelle diet</h1>
-        <p class='main-v__text'>誰でも、あなたを見て、その美しさを作られた神様を賛美する。</p>
+        <p class="main-v__text lang-change" lang="ja">誰でも、あなたを見て、その美しさを作られた神様を賛美する。</p>
+        <p class="main-v__text lang-change" lang="en">Everyone looks at you and praises the God who created that beauty.</p>
+        <p class="main-v__text lang-change" lang="ru">Все смотрят на вас и восхваляют Бога, создавшего эту красоту.</p>
     </div>
 </section>
 </body>

@@ -87,6 +87,27 @@ a {
   background-color: #323232;
 }
 
+.nav__lang {
+  margin-top: 45px;
+  color: #d2d2d2;
+}
+
+.nav__lang-text {
+  font-size: 1.4rem;
+}
+
+.nav__lang-btn {
+  margin-top: 10px;
+}
+
+.nav__lang input[type="radio"] {
+  display: none;
+}
+
+.nav__lang label {
+  margin-right: 15px;
+}
+
 .nav__btn {
   position: absolute;
   top: 20px;
@@ -116,6 +137,24 @@ a {
   width: 100%;
   height: 100%;
   background-color: #000;
+}
+
+.main-v__lang {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  color: #c8c8c8;
+  z-index: 1;
+}
+
+.main-v__lang input[type="radio"] {
+  display: none;
+}
+
+.main-v__lang label {
+  margin-right: 10px;
+  padding: 5px 20px;
+  border-bottom: 1px solid #323232;
 }
 
 .main-v__img {
@@ -289,12 +328,12 @@ a {
 }
 
 .reserve__inner {
-  margin-top: 20px;
+  margin-top: 45px;
 }
 
 .reserve__text {
   color: #d2d2d2;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .reserve__btn {
@@ -409,11 +448,12 @@ a {
 }
 
 .footer__line {
-  content: url(../../images/footer-line.png);
+  border-radius: 13px;
+  content: url(../../images/line-64px.png);
 }
 
 .footer__whatsapp {
-  content: url(../../images/footer-whatsapp.png);
+  content: url(../../images/whatsapp-64px.png);
 }
 
 .footer__nav {
@@ -442,6 +482,9 @@ a {
   .nav__btn-text {
     top: 37px;
     font-size: 1.2rem;
+  }
+  .main-v__lang {
+    display: none;
   }
   .main-v__img {
     background-image: url("../../images/main-img.jpeg");
@@ -473,7 +516,7 @@ a {
     height: 300px;
   }
   .footer__inner {
-    height: 350px;
+    height: 420px;
     padding-top: 10px;
     padding-left: 10px;
   }
@@ -495,11 +538,21 @@ a {
     font-size: 1rem;
   }
   .footer__chat {
-    display: none;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .footer__line {
+    border-radius: 13px;
+    content: url(../../images/line-64px.png);
+  }
+  .footer__whatsapp {
+    margin-left: 10px;
+    content: url(../../images/whatsapp-64px.png);
   }
   .footer__nav {
     margin-top: 10px;
-    margin-left: 0;
+    margin-left: 10px;
   }
   .footer__nav-item {
     margin-bottom: 1px;

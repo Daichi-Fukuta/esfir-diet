@@ -18,7 +18,7 @@
 <!-- ナビゲーション -->
 <nav class="nav">
     <div class="nav__inner">
-        <ul class="nav__list">
+        <ul class="nav__list lang-change" lang="ja">
             <li class="nav__item"><a href="./index.html">トップ</a></li>
             <li class="nav__item"><a href="./concept.html">コンセプト</a></li>
             <li class="nav__item"><a href="./ba.html">ビフォーアフター</a></li>
@@ -26,15 +26,62 @@
             <li class="nav__item"><a href="./contact.html">コンタクト</a></li>
             <li class="nav__item"><a href="./blog.html">ブログ</a></li>
         </ul>
+        <ul class="nav__list lang-change" lang="en">
+            <li class="nav__item"><a href="./index.html">Top</a></li>
+            <li class="nav__item"><a href="./concept.html">Concept</a></li>
+            <li class="nav__item"><a href="./ba.html">Before After</a></li>
+            <li class="nav__item"><a href="./flow.html">Flow</a></li>
+            <li class="nav__item"><a href="./contact.html">Contact</a></li>
+            <li class="nav__item"><a href="./blog.html">Blog</a></li>
+        </ul>
+        <ul class="nav__list lang-change" lang="ru">
+            <li class="nav__item"><a href="./index.html">верхний</a></li>
+            <li class="nav__item"><a href="./concept.html">Концепция</a></li>
+            <li class="nav__item"><a href="./ba.html">До после</a></li>
+            <li class="nav__item"><a href="./flow.html">поток</a></li>
+            <li class="nav__item"><a href="./contact.html">Связаться с нами</a></li>
+            <li class="nav__item"><a href="./blog.html">Блог</a></li>
+        </ul>
         <div class="reserve">
             <div class="reserve__inner">
-                <div class="reserve__text">予約はこちらから</div>
+                <div class="reserve__text lang-change" lang="ja">予約はこちらから</div>
+                <div class="reserve__text lang-change" lang="en">Reservation here</div>
+                <div class="reserve__text lang-change" lang="ru">Нажмите здесь, чтобы сделать заказ</div>
                 <div class="reserve__btn">
                     <span class="reserve__line"><a href=""></a></span>
                     <span class="reserve__whatsapp"><a href=""></a></span>
                 </div>
             </div>
         </div>
+        <!-- 言語切替ラジオボタン開始-->
+        <div class="nav__lang">
+            <div class="nav__lang-text lang-change" lang="ja">言語切り替え</div>
+            <div class="nav__lang-text lang-change" lang="en">Language switching</div>
+            <div class="nav__lang-text lang-change" lang="ru">Переключение языка</div>
+            <div class="nav__lang-btn">
+                <input type="radio" name="langKbn" id="sJa" onClick="langSet('ja')" checked>
+                <label for="sJa">
+                    <span class="lang-change" lang="ja">日本語</span>
+                    <span class="lang-change" lang="en">Japanese</span>
+                    <span class="lang-change" lang="ru">Японский</span>
+                </label>
+                
+                <input type="radio" name="langKbn" id="sEn" onClick="langSet('en')">
+                <label for="sEn">
+                    <span class="lang-change" lang="ja">英語</span>
+                    <span class="lang-change" lang="en">English</span>
+                    <span class="lang-change" lang="ru">английский</span>
+                </label>
+        
+                <input type="radio" name="langKbn" id="sRu" onClick="langSet('ru')">
+                <label for="sRu">
+                    <span class="lang-change" lang="ja">ロシア語</span>
+                    <span class="lang-change" lang="en">Russian</span>
+                    <span class="lang-change" lang="ru">русский</span>
+                </label>
+            </div>
+        </div>
+        <!-- 言語切替ラジオボタン終了 -->
         <span class="nav__btn">
             <ion-icon name="menu-outline" class="nav__btn-open"></ion-icon>
             <ion-icon name="close-outline" class="nav__btn-close"></ion-icon>
@@ -45,7 +92,8 @@
 
 <!-- コンセプト -->
 <section class="concept">
-    <div class="concept__inner">
+        <!-- ============================== 日本語バージョン ============================== -->
+    <div class="concept__inner lang-change" lang="ja">
         <div class="concept__title">
             ダイエット専門サロン
         </div>
@@ -127,6 +175,172 @@
             <br><br>(((((画像)))))<br><br>
         </div>
     </div>
+    <!-- ============================== 英語バージョン ============================== -->
+    <div class="concept__inner lang-change" lang="en">
+        <div class="concept__title">
+            English
+        </div>
+        <div class="concept__content">
+            EnglishEnglishEnglishEnglish<br>
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br>
+            <br><br>(((((画像))))) <br><br>
+            EnglishEnglishEnglishEnglish<br>
+            EnglishEnglishEnglishEnglish<br>
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br>
+            EnglishEnglishEnglishEnglish<br>
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br>
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglis<br>
+        </div>
+        <div class="concept__title">
+            EnglishEnglishEnglish
+        </div>
+        <div class="concept__content">
+            (((((画像)))))<br><br>
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br>
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglish
+        </div>
+        <div class="concept__title">
+            EnglishEnglishEnglishEnglish
+        </div>
+        <div class="concept__content">
+            EnglishEnglishEnglishEnglishEnglishEnglish<br>
+
+            <br><br>(((((画像)))))<br><br>
+
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br>
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br>
+
+            <br><br>(((((画像)))))<br><br>
+
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br>
+        </div>
+        <div class="concept__title">
+            EnglishEnglishEnglishEnglish
+        </div>
+        <div class="concept__content">
+            <br><br>(((((画像)))))<br><br>
+
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglish<br><br>
+
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br>
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br>
+
+            <br><br>(((((画像)))))<br><br>
+
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br><br>
+
+            ①EnglishEnglishEnglishEnglishEnglish<br><br>
+
+            ②EnglishEnglishEnglishEnglishEnglishEnglishEnglish<br><br>
+
+            ③EnglishEnglishEnglishEnglishEnglishEnglishEnglish<br><br>
+
+            ④EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br><br>
+
+            <br><br>(((((予約リンク)))))<br><br>
+
+            TEL<a href="tel:09012345678">090-1234-5678</a>
+        </div>
+        <div class="concept__title">
+            English
+        </div>
+        <div class="concept__content">
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br><br>
+
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br><br>
+
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br><br>
+
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br><br>
+            EnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglishEnglish<br><br>
+
+            <br><br>(((((画像)))))<br><br>
+        </div>
+    </div>
+        <!-- ============================== ロシア語バージョン ============================== -->
+    <div class="concept__inner lang-change" lang="ru">
+        <div class="concept__title">
+            русский
+        </div>
+        <div class="concept__content">
+            русский<br>
+            русский.русский<br>
+            <br><br>(((((画像))))) <br><br>
+            русский<br>
+            русский<br>
+            русский<br>
+            русский<br>
+            русский русский<br>
+            русский<br>
+        </div>
+        <div class="concept__title">
+            русский
+        </div>
+        <div class="concept__content">
+            (((((画像)))))<br><br>
+            русский<br>
+            русский
+        </div>
+        <div class="concept__title">
+            русский
+        </div>
+        <div class="concept__content">
+            русский<br>
+
+            <br><br>(((((画像)))))<br><br>
+
+            русский<br>
+            русский<br>
+
+            <br><br>(((((画像)))))<br><br>
+
+            русский
+            русский<br>
+        </div>
+        <div class="concept__title">
+            русский
+        </div>
+        <div class="concept__content">
+            <br><br>(((((画像)))))<br><br>
+
+            русский<br><br>
+
+            русский<br>
+            русский<br>
+
+            <br><br>(((((画像)))))<br><br>
+
+            русский<br><br>
+
+            русский<br><br>
+
+            русский<br><br>
+
+            русский<br><br>
+
+            русский<br><br>
+
+            <br><br>(((((予約リンク)))))<br><br>
+
+            TEL<a href="tel:09012345678">090-1234-5678</a>
+        </div>
+        <div class="concept__title">
+            русский
+        </div>
+        <div class="concept__content">
+            русский<br><br>
+
+            русский<br><br>
+
+            русский<br><br>
+
+            русский<br><br>
+            русский<br><br>
+
+            <br><br>(((((画像)))))<br><br>
+        </div>
+    </div>
 </section>
 
 <!-- フッター -->
@@ -136,25 +350,56 @@
             <div class="footer__info">
                 <div class="footer__logo">estelle diet</div>
                 <address class="footer__address">
-                    <ul class="footer__address-list">
+                    <ul class="footer__address-list lang-change" lang="ja">
                         <li class="footer__address-item">住所:〒930-1362 立山町吉峰野開21番地30</li>
-                        <li class="footer__address-item">eメール: <a href="hello@example.com">hello@example.com</a></li>
-                        <li class="footer__address-item">tel: <a href="tel:09012345678">090-1234-5678</a></li>
+                        <li class="footer__address-item">メール: <a href="hello@example.com">hello@example.com</a></li>
+                        <li class="footer__address-item">電話番号: <a href="tel:09012345678">090-1234-5678</a></li>
                         <li class="footer__address-item">営業時間: 11:00 ~ 21:00(不定休)</li>
+                        <li class="footer__address-item footer__chat"><a href="#" class="footer__line"></a></li>
+                        <li class="footer__address-item footer__chat"><a href="#" class="footer__whatsapp"></a></li>
+                    </ul>
+                    <ul class="footer__address-list lang-change" lang="en">
+                        <li class="footer__address-item">Address:21-30, Yoshiminenobiraki, Nakaniikawa Gun Tateyama Machi, Toyama Ken, 930-1362, Japan</li>
+                        <li class="footer__address-item">Email: <a href="hello@example.com">hello@example.com</a></li>
+                        <li class="footer__address-item">Tel: <a href="tel:09012345678">090-1234-5678</a></li>
+                        <li class="footer__address-item">Business Hours: 11:00 ~ 21:00(Irregular holidays)</li>
+                        <li class="footer__address-item footer__chat"><a href="#" class="footer__line"></a></li>
+                        <li class="footer__address-item footer__chat"><a href="#" class="footer__whatsapp"></a></li>
+                    </ul>
+                    <ul class="footer__address-list lang-change" lang="ru">
+                        <li class="footer__address-item">адрес улицы:〒930-1362 21-30 Есиминно-ган, Рицуяма-чо</li>
+                        <li class="footer__address-item">Эл. адрес: <a href="hello@example.com">hello@example.com</a></li>
+                        <li class="footer__address-item">телефонный номер: <a href="tel:09012345678">090-1234-5678</a></li>
+                        <li class="footer__address-item">часы работы: 11:00 ~ 21:00(Нерегулярные праздники)</li>
                         <li class="footer__address-item footer__chat"><a href="#" class="footer__line"></a></li>
                         <li class="footer__address-item footer__chat"><a href="#" class="footer__whatsapp"></a></li>
                     </ul>
                 </address>
             </div>
             <div class="footer__nav">
-                <ul class="footer__nav-list">
+                <ul class="footer__nav-list lang-change" lang="ja">
                     <li class="footer__nav-item"><a href="./index.html">トップ</a></li>
                     <li class="footer__nav-item"><a href="./concept.html">コンセプト</a></li>
                     <li class="footer__nav-item"><a href="./ba.html">ビフォーアフター</a></li>
                     <li class="footer__nav-item"><a href="./flow.html">施術までの流れ</a></li>
-                    <li class="footer__nav-item"><a href="#">予約</a></li>
                     <li class="footer__nav-item"><a href="./contact.html">コンタクト</a></li>
                     <li class="footer__nav-item"><a href="./blog.html">ブログ</a></li>
+                </ul>
+                <ul class="footer__nav-list lang-change" lang="en">
+                    <li class="footer__nav-item"><a href="./index.html">Top</a></li>
+                    <li class="footer__nav-item"><a href="./concept.html">Concept</a></li>
+                    <li class="footer__nav-item"><a href="./ba.html">Before After</a></li>
+                    <li class="footer__nav-item"><a href="./flow.html">Flos</a></li>
+                    <li class="footer__nav-item"><a href="./contact.html">Contact</a></li>
+                    <li class="footer__nav-item"><a href="./blog.html">Blog</a></li>
+                </ul>
+                <ul class="footer__nav-list lang-change" lang="ru">
+                    <li class="footer__nav-item"><a href="./index.html">верхний</a></li>
+                    <li class="footer__nav-item"><a href="./concept.html">Концепция</a></li>
+                    <li class="footer__nav-item"><a href="./ba.html">До после</a></li>
+                    <li class="footer__nav-item"><a href="./flow.html">поток</a></li>
+                    <li class="footer__nav-item"><a href="./contact.html">Связаться с нами</a></li>
+                    <li class="footer__nav-item"><a href="./blog.html">Блог</a></li>
                 </ul>
             </div>
         </div>

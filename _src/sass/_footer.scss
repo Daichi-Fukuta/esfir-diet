@@ -31,10 +31,11 @@
         margin-left: 30px;
     }
     &__line {
-        content: url(../../images/footer-line.png);
+        content: url(../../images/line-64px.png);
+        border-radius: 13px;
     }
     &__whatsapp {
-        content: url(../../images/footer-whatsapp.png);
+        content: url(../../images/whatsapp-64px.png);
     }
     &__nav {
         margin-top: 70px;
@@ -51,7 +52,7 @@
     }
     @media screen and (max-width: 768px) {
         &__inner {
-            height: 350px;
+            height: 420px;
             padding-top: 10px;
             padding-left: 10px;
         }
@@ -73,11 +74,21 @@
             margin-bottom: 1px;
         }
         &__chat {
-            display: none;
+            display: inline-block;
+            margin-top: 10px;
+            margin-left: 0;
+        }
+        &__line {
+            content: url(../../images/line-64px.png);
+            border-radius: 13px;
+        }
+        &__whatsapp {
+            content: url(../../images/whatsapp-64px.png);
+            margin-left: 10px;
         }
         &__nav {
             margin-top: 10px;
-            margin-left: 0;
+            margin-left: 10px;
         }
         &__nav-item {
             margin-bottom: 1px;

@@ -29,6 +29,22 @@
             background-color: rgb(50, 50, 50);
         }
     }
+    &__lang {
+        margin-top: 45px;
+        color: rgb(210, 210, 210);
+        &-text {
+            font-size: 1.4rem;
+        }
+        &-btn {
+            margin-top: 10px;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        label {
+            margin-right: 15px;
+        }
+    }
     &__btn {
         position: absolute;
         top: 20px;
