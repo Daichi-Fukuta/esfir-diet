@@ -6,12 +6,12 @@
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script
         src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -19,28 +19,28 @@
 <nav class="nav">
     <div class="nav__inner">
         <ul class="nav__list lang-change" lang="ja">
-            <li class="nav__item"><a href="./index.html">トップ</a></li>
-            <li class="nav__item"><a href="./concept.html">コンセプト</a></li>
-            <li class="nav__item"><a href="./ba.html">ビフォーアフター</a></li>
-            <li class="nav__item"><a href="./flow.html">施術までの流れ</a></li>
-            <li class="nav__item"><a href="./contact.html">コンタクト</a></li>
-            <li class="nav__item"><a href="./blog.html">ブログ</a></li>
+            <li class="nav__item"><a href="../index.html">トップ</a></li>
+            <li class="nav__item"><a href="../concept.html">コンセプト</a></li>
+            <li class="nav__item"><a href="../ba.html">ビフォーアフター</a></li>
+            <li class="nav__item"><a href="../flow.html">施術までの流れ</a></li>
+            <li class="nav__item"><a href="../contact.html">コンタクト</a></li>
+            <li class="nav__item"><a href="./index.php">ブログ</a></li>
         </ul>
         <ul class="nav__list lang-change" lang="en">
-            <li class="nav__item"><a href="./index.html">Top</a></li>
-            <li class="nav__item"><a href="./concept.html">Concept</a></li>
-            <li class="nav__item"><a href="./ba.html">Before After</a></li>
-            <li class="nav__item"><a href="./flow.html">Flow</a></li>
-            <li class="nav__item"><a href="./contact.html">Contact</a></li>
-            <li class="nav__item"><a href="./blog.html">Blog</a></li>
+            <li class="nav__item"><a href="../index.html">Top</a></li>
+            <li class="nav__item"><a href="../concept.html">Concept</a></li>
+            <li class="nav__item"><a href="../ba.html">Before After</a></li>
+            <li class="nav__item"><a href="../flow.html">Flow</a></li>
+            <li class="nav__item"><a href="../contact.html">Contact</a></li>
+            <li class="nav__item"><a href="./index.php">Blog</a></li>
         </ul>
         <ul class="nav__list lang-change" lang="ru">
-            <li class="nav__item"><a href="./index.html">верхний</a></li>
-            <li class="nav__item"><a href="./concept.html">Концепция</a></li>
-            <li class="nav__item"><a href="./ba.html">До после</a></li>
-            <li class="nav__item"><a href="./flow.html">поток</a></li>
-            <li class="nav__item"><a href="./contact.html">Связаться с нами</a></li>
-            <li class="nav__item"><a href="./blog.html">Блог</a></li>
+            <li class="nav__item"><a href="../index.html">верхний</a></li>
+            <li class="nav__item"><a href="../concept.html">Концепция</a></li>
+            <li class="nav__item"><a href="../ba.html">До после</a></li>
+            <li class="nav__item"><a href="../flow.html">поток</a></li>
+            <li class="nav__item"><a href="../contact.html">Связаться с нами</a></li>
+            <li class="nav__item"><a href="./index.php">Блог</a></li>
         </ul>
         <div class="reserve">
             <div class="reserve__inner">
@@ -95,6 +95,24 @@
     <div class="blog__inner">
         <h2 class="blog__title">ブログ</h2>
     </div>
+    <?php
+    try {
+        $dsn = 'mysql:dbname=esfir;host=127.0.0.1;charset=utf8mb4';
+        $username = 'root';
+        $password = 'password';
+        $driver_options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
+        $db = new PDO($dsn, $username, $password, $driver_options);
+    } catch (Exception $e) {
+        echo 'DB接続エラー: ' . $e->getMessage();
+    }
+
+    $blogs = $db->query("SELECT * FROM blogs");
+    $blogs = $blogs->fetchAll();
+    
+    foreach ($blogs as $blog) {
+        echo $blog['title'], '<br>';
+    }
+    ?>
 </section>
 
 <!-- フッター -->
@@ -132,28 +150,28 @@
             </div>
             <div class="footer__nav">
                 <ul class="footer__nav-list lang-change" lang="ja">
-                    <li class="footer__nav-item"><a href="./index.html">トップ</a></li>
-                    <li class="footer__nav-item"><a href="./concept.html">コンセプト</a></li>
-                    <li class="footer__nav-item"><a href="./ba.html">ビフォーアフター</a></li>
-                    <li class="footer__nav-item"><a href="./flow.html">施術までの流れ</a></li>
-                    <li class="footer__nav-item"><a href="./contact.html">コンタクト</a></li>
-                    <li class="footer__nav-item"><a href="./blog.html">ブログ</a></li>
+                    <li class="footer__nav-item"><a href="../index.html">トップ</a></li>
+                    <li class="footer__nav-item"><a href="../concept.html">コンセプト</a></li>
+                    <li class="footer__nav-item"><a href="../ba.html">ビフォーアフター</a></li>
+                    <li class="footer__nav-item"><a href="../flow.html">施術までの流れ</a></li>
+                    <li class="footer__nav-item"><a href="../contact.html">コンタクト</a></li>
+                    <li class="footer__nav-item"><a href="./index.php">ブログ</a></li>
                 </ul>
                 <ul class="footer__nav-list lang-change" lang="en">
-                    <li class="footer__nav-item"><a href="./index.html">Top</a></li>
-                    <li class="footer__nav-item"><a href="./concept.html">Concept</a></li>
-                    <li class="footer__nav-item"><a href="./ba.html">Before After</a></li>
-                    <li class="footer__nav-item"><a href="./flow.html">Flos</a></li>
-                    <li class="footer__nav-item"><a href="./contact.html">Contact</a></li>
-                    <li class="footer__nav-item"><a href="./blog.html">Blog</a></li>
+                    <li class="footer__nav-item"><a href="../index.html">Top</a></li>
+                    <li class="footer__nav-item"><a href="../concept.html">Concept</a></li>
+                    <li class="footer__nav-item"><a href="../ba.html">Before After</a></li>
+                    <li class="footer__nav-item"><a href="../flow.html">Flos</a></li>
+                    <li class="footer__nav-item"><a href="../contact.html">Contact</a></li>
+                    <li class="footer__nav-item"><a href="./index.php">Blog</a></li>
                 </ul>
                 <ul class="footer__nav-list lang-change" lang="ru">
-                    <li class="footer__nav-item"><a href="./index.html">верхний</a></li>
-                    <li class="footer__nav-item"><a href="./concept.html">Концепция</a></li>
-                    <li class="footer__nav-item"><a href="./ba.html">До после</a></li>
-                    <li class="footer__nav-item"><a href="./flow.html">поток</a></li>
-                    <li class="footer__nav-item"><a href="./contact.html">Связаться с нами</a></li>
-                    <li class="footer__nav-item"><a href="./blog.html">Блог</a></li>
+                    <li class="footer__nav-item"><a href="../index.html">верхний</a></li>
+                    <li class="footer__nav-item"><a href="../concept.html">Концепция</a></li>
+                    <li class="footer__nav-item"><a href="../ba.html">До после</a></li>
+                    <li class="footer__nav-item"><a href="../flow.html">поток</a></li>
+                    <li class="footer__nav-item"><a href="../contact.html">Связаться с нами</a></li>
+                    <li class="footer__nav-item"><a href="./index.php">Блог</a></li>
                 </ul>
             </div>
         </div>
